@@ -4,7 +4,7 @@
 
 First open VSCode and open a new terminal and ussing the ssh command use your own ieng6 account in my case it is
 
-ssh cs15lsp23gm@ieng6.ucsd.edu and then press enter to log in and press enter. 
+ `<ssh cs15lsp23gm@ieng6.ucsd.edu>` and then press enter to log in and press `<enter>`. 
 
 
 <img width="653" alt="Screen Shot 2023-05-20 at 7 29 07 PM" src="https://github.com/lmillan1/LabReport4/assets/130090548/bafaed2a-f641-4650-a9ad-eeaa5a753404">
@@ -20,7 +20,7 @@ To clone the fork of the repository first go to the website and click on the cod
 
 ## Run the tests, demonstrating that they fail
 
-Before even running the test we want to make sure that we are in the directory for lab7 to this first type in `ls` on the terminal then `cd` to `lab7`. After that once again press `ls` to see what file we have to run and to be able to run we have use the command `bash` and to run the test use `bash test.sh` and as you can see from the picture it fails for now.
+Before even running the test we want to make sure that we are in the directory for lab7 to this first type in `<ls>` on the terminal then `<cd>` to `<lab7>`. After that once again press `<ls>` to see what file we have to run and to be able to run we have use the command `<bash>` and to run the test use `<bash test.sh>` and as you can see from the picture it fails for now.
 
 
 
@@ -48,11 +48,11 @@ Before even running the test we want to make sure that we are in the directory f
 
 ## Edit the code file ListExamples.java to fix the failing test (as a reminder, the error in the code is just that index1 is used instead of index2 in the final loop in merge)
 
-To edit the code we want to use `vim` and enter into the file from the terminal to do this we just type in `vim ListExamples.java` and enter into the vim file. To edit the file we first have to type `i` to insert to the file be able to edit. 
-1.vim ListExamples.java <enter>
-2./index1 nnnnnnnnn dw iindex2<_><esc> :wq <enter>
-3. Press escape and type in :w to save the edits and then use escape again then :q to exit vim.
-3.bash test.sh
+To edit the code we want to use `<vim>` and enter into the file from the terminal to do this we just type in `<vim ListExamples.java>` and enter into the vim file. To edit the file we first have to type `<i>` to insert to the file be able to edit. 
+1.vim ListExamples.java `<enter>`
+2.`/index1 nnnnnnnnn dw iindex2<_><esc> :wq <enter>`
+3. Press `<escape>` and type in `<:w>` to save the edits and then use escape again then `<:q>` to exit vim.
+3.`<bash test.sh>`
 
   
   
