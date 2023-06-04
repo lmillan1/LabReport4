@@ -5,6 +5,12 @@
 First open VSCode and open a new terminal and ussing the ssh command use your own ieng6 account in my case it is
 
  `<ssh cs15lsp23gm@ieng6.ucsd.edu>` and then press enter to log in and press `<enter>`. 
+ 
+ When SSH key-based authentication is properly configured, you don't need to enter a password each time you log in. Instead, the SSH client uses your locally stored private key to authenticate with the remote server. The server, in turn, verifies the authenticity of the key by matching it with the corresponding public key stored in the authorized_keys file on the server.
+
+To set up SSH key-based authentication, you typically generate a public-private key pair on your local machine and then add the public key to the remote server's authorized_keys file. 
+
+If you didn't have to enter a password after executing the ssh command, it indicates that SSH key-based authentication is already set up between your local machine and the ieng6 server.
 
 
 <img width="653" alt="Screen Shot 2023-05-20 at 7 29 07 PM" src="https://github.com/lmillan1/LabReport4/assets/130090548/bafaed2a-f641-4650-a9ad-eeaa5a753404">
@@ -49,10 +55,25 @@ Before even running the test we want to make sure that we are in the directory f
 ## Edit the code file ListExamples.java to fix the failing test (as a reminder, the error in the code is just that index1 is used instead of index2 in the final loop in merge)
 
 To edit the code we want to use `<vim>` and enter into the file from the terminal to do this we just type in `<vim ListExamples.java>` and enter into the vim file. To edit the file we first have to type `<i>` to insert to the file be able to edit. 
-1.vim ListExamples.java `<enter>`
-2.`/index1 nnnnnnnnn dw iindex2<_><esc> :wq <enter>`
-3. Press `<escape>` and type in `<:w>` to save the edits and then use escape again then `<:q>` to exit vim.
-3.`<bash test.sh>`
+
+`<vim ListExamples.java> <enter>:`
+This command opens the ListExamples.java file in the vim editor. It launches the editor and loads the specified file for editing.
+
+`</index1 nnnnnnnnn dw iindex2<_><esc> :wq <enter>`
+ This sequence of keystrokes represents the edits made in the vim editor to fix the failing test. Here's the breakdown:
+
+`/<index1 <enter>`:This initiates a forward search for the pattern index1 in the file. It positions the cursor at the first occurrence of index1.
+`<nnnnnnnnn>`: This command repeats the previous search (index1) multiple times, skipping additional occurrences. It ensures that the cursor is at the correct location for editing.
+`<dw>`: This command deletes the word under the cursor (index1 in this case). It removes the incorrect variable name.
+`<i>`: This command switches the vim editor to insert mode. It enables editing and allows you to add new text.
+`<index2<_>>`: This represents the correct replacement text to be inserted. The <_> denotes the cursor position after the text is inserted. In this case, it means the cursor is placed after index2 for further editing if needed.
+`<esc>`: This command switches vim back to normal mode from insert mode. It allows you to execute subsequent commands.
+`:wq <enter>`: This command sequence saves the changes and exits vim. :w saves the modified file, and :q quits the editor.
+`<bash test.sh> <enter>` :This command executes the test.sh script, running the tests to verify if the changes made in the code have fixed the failing test.
+
+Shortcuts and Purpose:
+
+The keystroke sequence mentioned in step 2 doesn't utilize any shortcuts but relies on standard vim commands for search, deletion, insertion, and saving. These commands are commonly used for text editing in vim. The purpose of using these commands is to efficiently navigate the file, delete the incorrect variable, insert the correct variable, save the changes, and exit the editor. By utilizing these commands, you can perform the necessary edits effectively within the vim environment
 
   
   
