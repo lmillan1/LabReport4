@@ -86,7 +86,7 @@ The keystroke sequence mentioned in step 2 doesn't utilize any shortcuts but rel
   
 <img width="1512" alt="Screen Shot 2023-05-20 at 7 48 45 PM" src="https://github.com/lmillan1/LabReport4/assets/130090548/a02e5557-d41e-4958-8890-38b76b262c86">
 
-  # Commit and push the resulting change to your Github account
+  Commit and push the resulting change to your Github account
   To do this we have to first type in the terminal `git add .m` to make sure it changes in all the files. Then `git commit -m "Edited index1 to 2" to provided context in the edited that we maid and and use the `git push` to push the change into github account.
 
 
